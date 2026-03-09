@@ -5,6 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>S.A.N.J.A.R. | Cyber-Security Simulation</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Доработки по выравниванию и блокам */
+        .content {
+            text-align: left; /* Выравнивание по левому краю */
+        }
+        .desc-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .desc-box {
+            background: #121417;
+            padding: 30px; /* Увеличил вертикальные отступы для длины */
+            border-left: 4px solid #de9b35; /* Оставил акцент на левой стороне */
+            border-radius: 4px;
+            min-height: 120px; /* Чтобы квадратики были длиннее по вертикали */
+        }
+        .desc-box h3 {
+            margin-top: 0;
+            color: #de9b35;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -21,71 +43,81 @@
 
         <section class="content">
             <h2>1) Project Description</h2>
-            <p><strong>S.A.N.J.A.R.</strong> is an interactive "manual packet inspection" simulator inspired by the mechanics of <em>Papers, Please</em>. Instead of passports, you inspect network packets at the gateway of a high-security server.</p>
-            <p><strong>The Problem:</strong> Most people lack practical understanding of how network threats work. Traditional education is often too theoretical and disengaging.</p>
-            <p><strong>The Solution:</strong> This project teaches cybersecurity fundamentals through high-pressure gamification, training users to identify malicious patterns in real-time.</p>
-            <p><strong>Uniqueness:</strong> It combines technical network logic with intense decision-making gameplay, creating a "human firewall" intuition.</p>
+            <div class="desc-container">
+                <div class="desc-box">
+                    <h3>What it is</h3>
+                    <p>S.A.N.J.A.R. is an interactive "manual packet inspection" simulator. Users take on the role of a system firewall, manually verifying data requests to protect a server infrastructure.</p>
+                </div>
+                <div class="desc-box">
+                    <h3>The Problem</h3>
+                    <p>Standard cybersecurity education is too theoretical. Students often fail to recognize real-time digital threats like DDoS or malicious code because they lack practical experience.</p>
+                </div>
+                <div class="desc-box">
+                    <h3>The Solution</h3>
+                    <p>By gamifying the inspection process, we provide a hands-on environment where users learn to identify attack patterns under pressure, building "digital intuition."</p>
+                </div>
+                <div class="desc-box">
+                    <h3>Uniqueness</h3>
+                    <p>Unlike simple games, this project focuses on realistic network logic and fast-paced decision making, making it a professional-grade educational tool.</p>
+                </div>
+            </div>
         </section>
 
         <section class="content">
             <h2>2) Functional Requirements</h2>
             <ul class="mechanics-list">
-                <li><strong>Packet Inspection:</strong> Real-time analysis of IP addresses, ports, and data payloads.</li>
-                <li><strong>Filtering System:</strong> Use <code>ACCEPT</code> to allow safe traffic and <code>DROP</code> to block malicious threats.</li>
-                <li><strong>Scoring Mechanism:</strong> Gain points for accurate filtering; lose system health for allowing breaches.</li>
-                <li><strong>Dynamic Threat Scaling:</strong> Traffic speed and attack complexity increase as the session progresses.</li>
+                <li><strong>Packet Analysis:</strong> Review IP addresses and data payloads in real-time.</li>
+                <li><strong>Firewall Logic:</strong> Use "Accept" and "Drop" commands to filter traffic.</li>
+                <li><strong>Scoring System:</strong> Performance-based metrics based on security accuracy.</li>
+                <li><strong>Stress Simulation:</strong> Scalable difficulty based on incoming traffic volume.</li>
             </ul>
         </section>
 
         <section class="content">
             <h2>3) Technical Requirements</h2>
             <ul class="mechanics-list">
-                <li><strong>Core Engine:</strong> Built in C++ using the MinGW compiler for high-performance system simulation.</li>
-                <li><strong>Design & Assets:</strong> 3D environment and terminal interface modeled in Autodesk Maya.</li>
-                <li><strong>Platform:</strong> Native Windows Desktop Application.</li>
-                <li><strong>Hosting:</strong> Website hosted via GitHub Pages.</li>
-                <li><strong>Source Code:</strong> Managed on <a href="https://github.com/k0nstant" style="color: #de9b35;">GitHub</a>.</li>
+                <li><strong>Programming:</strong> C++ (MinGW) for high-performance processing.</li>
+                <li><strong>UI Assets:</strong> Professional 3D modeling for the terminal interface.</li>
+                <li><strong>Deployment:</strong> Managed and hosted via GitHub.</li>
+                <li><strong>Repository:</strong> <a href="https://github.com/k0nstant" style="color: #de9b35;">Source Code Link</a></li>
             </ul>
         </section>
 
         <section class="content">
-            <h2>4) Sketches / Prototype Design</h2>
-            <p>Initial vision of the retro-futuristic hacker terminal and 3D data-tunnel interface.</p>
-            <div style="background: #121417; padding: 20px; border: 1px dashed #de9b35; margin-top: 10px;">
-                <p>[Insert photo of your hand-drawn sketch or Maya render here]</p>
+            <h2>4) Prototype Design</h2>
+            <p>Visual representation of the secure terminal layout and data flow mechanics.</p>
+            <div style="background: #121417; padding: 20px; border: 1px dashed #de9b35; margin-top: 10px; min-height: 200px;">
+                <p>[Your Sketch / Prototype Image will be placed here]</p>
             </div>
         </section>
 
         <section class="content">
             <h2>5) About the Authors</h2>
-            <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 20px; margin-top: 20px;">
-                <div style="max-width: 300px; text-align: left; background: #121417; padding: 15px; border-radius: 8px; border: 1px solid #333;">
-                    <p>[Photo of Raimbek]</p>
+            <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 20px;">
+                <div style="flex: 1; min-width: 280px; background: #121417; padding: 20px; border-radius: 8px;">
                     <h3>Raimbek Gabitov</h3>
-                    <p><strong>Role:</strong> Lead Programmer & 3D Modeler.</p>
-                    <p><strong>Skills:</strong> System optimization, C++, low-level development.</p>
-                    <p><strong>Motivation:</strong> To turn complex cybersecurity concepts into an accessible digital tool.</p>
+                    <p><strong>Role:</strong> Lead Programmer & System Architect.</p>
+                    <p><strong>Focus:</strong> System optimization and low-level software development.</p>
+                    <p><strong>Motivation:</strong> To develop efficient tools for digital literacy and safety.</p>
                 </div>
-                <div style="max-width: 300px; text-align: left; background: #121417; padding: 15px; border-radius: 8px; border: 1px solid #333;">
-                    <p>[Photo of Sanjar]</p>
+                <div style="flex: 1; min-width: 280px; background: #121417; padding: 20px; border-radius: 8px;">
                     <h3>Sanjar Sauirbay</h3>
-                    <p><strong>Role:</strong> Game Designer & Researcher.</p>
-                    <p><strong>Skills:</strong> Game mechanics, network vulnerability research.</p>
-                    <p><strong>Motivation:</strong> Making digital safety as engaging and competitive as a modern shooter.</p>
+                    <p><strong>Role:</strong> Research & Logic Design.</p>
+                    <p><strong>Focus:</strong> Network vulnerability analysis and game mechanics.</p>
+                    <p><strong>Motivation:</strong> Translating complex security concepts into engaging experiences.</p>
                 </div>
             </div>
         </section>
 
         <section class="content">
-            <h2>6) Additional Project Information</h2>
-            <p><strong>Timeline:</strong> Feb-Mar (Core Engine), Apr (UI/UX Design), May (Release & Testing).</p>
-            <p><strong>Future Improvements:</strong> Implementation of a "Hacker vs Defender" multiplayer mode and an infinite DDoS survival mode.</p>
-            <p><strong>Social Impact:</strong> Free distribution to schools as a cybersecurity awareness tool for students.</p>
+            <h2>6) Additional Information</h2>
+            <p><strong>Development Goal:</strong> To create a stable, educational platform for students to practice network defense.</p>
+            <p><strong>Future Plans:</strong> Integration of advanced attack scenarios and localized language support.</p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Created by: Raimbek Gabitov & Sanjar Sauirbay | All Rights Reserved</p>
+        <p>&copy; 2026 | Raimbek Gabitov & Sanjar Sauirbay | Project S.A.N.J.A.R.</p>
     </footer>
 </body>
 </html>
