@@ -103,7 +103,7 @@
                 </div>
                 <div class="desc-box">
                     <h3>Problem Statement</h3>
-                    <p>Many students lack a practical understanding of how network security works. This project will be trying to close the gap between hard theory and real-world application through a game-like environment.</p>
+                    <p>As it has been discovered, most of the people do not know what does the sysadmin do or what does the cybersecurity term mean. Our project, S.A.N.J.A.R. is designed to raise cybersec among people, make them feel what does a firewall manager do, introduce players to cybersec and its basics.</p>
                 </div>
                 <div class="desc-box">
                     <h3>Importance</h3>
@@ -111,7 +111,7 @@
                 </div>
                 <div class="desc-box">
                     <h3>Unique Value</h3>
-                    <p>The project focuses on high pressure decision-making and technical logic, providing a realistic simulation of network defense tasks.</p>
+                    <p>The project focuses on high pressure decision-making and technical logic, letting the user feel what is it to be a sysadmin/firewall manager.</p>
                 </div>
             </div>
         </section>
@@ -119,7 +119,7 @@
         <section class="content">
             <h2>2) Functional Requirements</h2>
             <ul class="mechanics-list">
-                <li>"sanzhar nauchis bullety stavit pzh" Real time display of incoming data packets</li>
+                <li>Real time display of incoming data packets</li>
                 <li>Typing text like "Accept" and "Drop" instead of using basic buttons for filtering incoming packets</li>
                 <li>Track your scores based on successful filtering and security breaches</li>
                 <li>Progression system with increasing difficulty and traffic volume</li>
@@ -132,7 +132,7 @@
                 <li><strong>Programming Language:</strong> C++</li>
                 <li><strong>Compiler:</strong> MSVC - Microsoft Visual C++</li>
                 <li><strong>Version Control:</strong> Managed by Git</li>
-                <li><strong>Hosting:</strong> Website deployed through GitHub Pages</li>
+                <li><strong>Hosting:</strong> Website deployed through GitHub Pages, cause the Railway's trial doesnt last for too long.</li>
                 <li><strong>Repository:</strong> <a href="https://github.com/k0nstant-hvh/designfa" style="color: #de9b35;">Public GitHub Link</a></li>
             </ul>
         </section>
@@ -141,8 +141,21 @@
             <h2>4) Sketches / Prototype Design</h2>
             <p>Visual prototypes of the interface and gameplay</p>
             <div style="background: #121417; padding: 20px; border: 1px dashed #de9b35; margin-top: 10px; display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
-                <img src="game_mainmenu.png" alt="Main Menu" style="max-width: 45%; border: 1px solid #de9b35;">
-                <img src="game_gamewhowouldhavethought.png" alt="Gameplay Process" style="max-width: 45%; border: 1px solid #de9b35;">
+                
+                <div style="max-width: 45%; text-align: center;">
+                    <img src="game_mainmenu.png" alt="Main Menu" style="width: 100%; border: 1px solid #de9b35;">
+                    <p style="margin-top: 10px; font-size: 0.9rem; color: #e1e1e1; line-height: 1.4;">
+                        The main menu. There are few NOT-clickable .txt documents. 1 .mp4 file, 1 .exe file - the player will have to type an execute command in cmd in order to open these files.
+                    </p>
+                </div>
+
+                <div style="max-width: 45%; text-align: center;">
+                    <img src="game_gamewhowouldhavethought.png" alt="Gameplay Process" style="width: 100%; border: 1px solid #de9b35;">
+                    <p style="margin-top: 10px; font-size: 0.9rem; color: #e1e1e1; line-height: 1.4;">
+                        The game process. As it is shown, there are incoming and outcoming data packets with different properties as adresses, protocols and so on. In order to make a decision on one of the packet (to let it in or to not), user will have to type a command in integrated cmd-like console.
+                    </p>
+                </div>
+
             </div>
         </section>
 
@@ -167,37 +180,41 @@
         </section>
 
         <section class="content">
-            <h2>6) Additional Project Information</h2>
-            <h3>Development Timeline</h3>
-            <table class="timeline-table">
-                <thead>
-                    <tr>
-                        <th>Date</th>
-                        <th>Task Description</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Mid March</td>
-                        <td>Intensive development (grinding) of the core game engine and primary features.</td>
-                    </tr>
-                    <tr>
-                        <td>Late March</td>
-                        <td>Refining mechanics and fixing bugs based on collected feedback.</td>
-                    </tr>
-                </tbody>
-            </table>
-            
-            <p style="margin-top: 20px;">
-                <strong>Dates and tasks may change depending on developers schedule</strong><br><br>
-                <strong>Future Improvements:</strong> Creating a 
-                <span class="hover-wrapper">
-                    Manual/Guide/Tutorials
-                    <img src="sanjarmanual.png" alt="Preview" class="hover-img-popup" style="width: 250px;">
-                </span> 
-                page for beginners to learn the playing process.
-            </p>
-        </section>
+    <h2>6) Additional Project Information</h2>
+    <h3>Development Timeline</h3>
+    <table class="timeline-table">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Task Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Mid April</td>
+                <td>Intensive development (grinding) of the core game engine and primary features.</td>
+            </tr>
+            <tr>
+                <td>Early May</td>
+                <td>Refining mechanics and fixing bugs based on collected feedback.</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <p style="margin-top: 20px;">
+        <strong>Dates and tasks may change depending on developers schedule</strong><br><br>
+        <strong>Future Improvements:</strong><br>
+        • Creating a 
+        <span class="hover-wrapper">
+            Manual/Guide/Tutorials
+            <img src="sanjarmanual.png" alt="Preview" class="hover-img-popup" style="width: 250px;">
+        </span> 
+        page for beginners to learn the playing process.<br>
+        • Switching from Windows style to more of a Linux/etc. styled design. <br>
+        • <strong>Planned DLC 1 - Guarded Analytics Yoke:</strong> A planned expansion pack that introduces <em>Heuristic Packet Mutation</em>. In this mode, malicious data packets will change themselves during the inspection in front of the firewall (the player)<br>
+        • <strong>Planned DLC 2 - Host Integrity Verifier:</strong> An expansion pack focused on <em>Zero-Day Payload Neutralization</em>. This expansion adds a second layer of security and a second chanse for the player to correct himself. Some of the data packets will seem as normal, but they will contain unknown malicious load in them. Player will be able to track them based on their behaviour.
+    </p>
+</section>
     </main>
 
     <footer>
