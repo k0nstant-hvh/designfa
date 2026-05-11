@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Development Process | S.A.N.J.A.R.</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .content { text-align: left; }
+        .hero { padding: 60px 20px; background: #121417; border-bottom: 1px solid #de9b35; text-align: center; }
+        
+        /* Vibecoding Box */
+        .methodology-box {
+            background: #1b1f23;
+            border: 1px solid #de9b35;
+            padding: 25px;
+            margin: 20px 0;
+            border-left: 10px solid #de9b35;
+            position: relative;
+        }
+        .methodology-box::before { content: '"'; font-size: 4rem; color: #de9b35; position: absolute; left: 10px; top: -10px; opacity: 0.3; }
+
+        /* Timeline & Versioning */
+        .version-card {
+            background: #121417;
+            border: 1px solid #333;
+            border-left: 4px solid #de9b35;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        .version-tag { background: #de9b35; color: #121417; padding: 2px 10px; font-weight: bold; border-radius: 2px; text-transform: uppercase; font-size: 0.8rem; }
+        
+        /* Video Container */
+        .video-container {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            background: #000;
+            border: 1px solid #de9b35;
+            margin: 15px 0;
+        }
+        .video-container iframe { width: 100%; height: 100%; border: none; }
+
+        /* Screenshots */
+        .screenshot-box {
+            width: 100%;
+            border: 1px solid #333;
+            margin: 15px 0;
+        }
+        .screenshot-box img { width: 100%; display: block; }
+
+        /* Evidence Table & Comparison Fix */
+        .comparison-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 20px 0; }
+        .comp-item { text-align: center; }
+        .comp-item p { color: #de9b35; font-weight: bold; margin-bottom: 10px; }
+        
+        .comp-item img { 
+            width: 100%; 
+            height: auto; 
+            display: block; 
+            border: 1px solid #333; 
+        }
+
+        .explanation-space {
+            background: #121417;
+            border: 1px dashed #555;
+            padding: 15px;
+            color: #de9b35;
+            font-size: 0.9rem;
+            margin-top: 10px;
+            text-align: left;
+        }
+
+        /* Tool Tags */
+        .tool-tag { display: inline-block; background: #2a2e33; color: #de9b35; border: 1px solid #de9b35; padding: 4px 12px; border-radius: 20px; font-size: 0.85rem; margin: 5px; font-family: monospace; }
+        
+        .code-snippet {
+            background: #0d0e11;
+            padding: 15px;
+            border-radius: 4px;
+            border: 1px solid #333;
+            font-family: 'Consolas', monospace;
+            font-size: 0.9rem;
+            color: #76c7b7;
+            overflow-x: auto;
+            margin: 15px 0;
+        }
+
+        @media (max-width: 600px) {
+            .comparison-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="development.html" class="active">Development Process</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>The Development Journey</h1>
+            <p>Evolution through AI Engineering and User Feedback</p>
+        </section>
+
+        <section class="content">
+            <h2>0) Methodology: AI-Driven Engineering</h2>
+            <div class="methodology-box">
+                "Vibecoding is not about avoiding the work; it's about accelerating the vision. By using Gemini as an Architect and Claude Code as a Compiler, I transformed high-level cybersecurity concepts into a functional C++/Raylib environment in record time."
+            </div>
+            <p>During development, I assumed the role of <strong>System Architect & Prompt Engineer</strong>. I maintained the logic, resolved system-level conflicts, and ensured the AI's output met the technical requirements of a realistic firewall simulator.</p>
+        </section>
+
+        <section class="content">
+            <h2>1) Version Timeline</h2>
+            <div class="version-card">
+                <span class="version-tag">Alpha</span>
+                <h3>Core Mechanics & Logic</h3>
+                <div class="screenshot-box"><img src="alpha_version.png" alt="Alpha Version UI"></div>
+                <p><strong>Capabilities:</strong> Simple CLI interface. Packet generation engine functional. Basic SQLi detection logic. "Accept/Drop" commands working via standard input.</p>
+            </div>
+            <div class="version-card">
+                <span class="version-tag">Beta</span>
+                <h3>The "S.A.N.J.A.R. OS" Interface</h3>
+                <div class="screenshot-box"><img src="beta_desktop.png" alt="Beta Version UI"></div>
+                <p><strong>Capabilities:</strong> Migration to Raylib GUI. Window management system implemented. Desktop icons, terminal window, and multitasking features added.</p>
+            </div>
+            <div class="version-card">
+                <span class="version-tag">Final</span>
+                <h3>Immersion & Failure States</h3>
+                <div class="screenshot-box"><img src="final_release.png" alt="Final Release UI"></div>
+                <p><strong>Capabilities:</strong> Integrated system sounds, advanced infinite bootloop sequence, XSS threat types, and functional settings.json parsing.</p>
+            </div>
+        </section>
+
+        <section class="content">
+            <h2>2) Feedback Loop</h2>
+            <h3>Alpha Stage: Sponsor Interview</h3>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/sMrcg15pcaE" allowfullscreen></iframe>
+            </div>
+            <div class="desc-box">
+                <p><strong>Main Feedback:</strong> The sponsor noted that while the logic was solid, the text-only mode was intimidating for non-technical users. Suggestion: Move to a graphical environment.</p>
+            </div>
+            <h3>Beta Stage: User Testing</h3>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/HYLaC2SnUI0" allowfullscreen></iframe>
+            </div>
+            <table class="timeline-table" style="width: 100%; border-collapse: collapse; margin-top: 15px;">
+                <tr style="background: #1b1f23; color: #de9b35;">
+                    <th style="padding: 10px; border: 1px solid #333;">Category</th>
+                    <th style="padding: 10px; border: 1px solid #333;">Feedback</th>
+                    <th style="padding: 10px; border: 1px solid #333;">Response</th>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #333;">Usability</td>
+                    <td style="padding: 10px; border: 1px solid #333;">"Unclear threat types"</td>
+                    <td style="padding: 10px; border: 1px solid #333;">Expanded <strong>guide.txt</strong> with XSS/RCE docs, changed it from .txt to .pdf</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #333;">Functionality</td>
+                    <td style="padding: 10px; border: 1px solid #333;">"Game is way too fast paced, cant focus on a game session"</td>
+                    <td style="padding: 10px; border: 1px solid #333;">Implemented <strong>Bootloop sequence</strong>.</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #333;">Customization</td>
+                    <td style="padding: 10px; border: 1px solid #333;">"No settings change enabled"</td>
+                    <td style="padding: 10px; border: 1px solid #333;">Enabled <strong>settings.json</strong> live parsing.</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="content">
+            <h2>3) Evidence of Development</h2>
+            
+            <h3>AI Collaboration & Logic Design</h3>
+            <p>Since the project follows the <strong>Vibecoding</strong> paradigm, the primary development evidence consists of architectural dialogues. Below are the key stages of collaboration that shaped the game's logic.</p>
+            
+            <div class="comparison-grid">
+                <div class="comp-item">
+                    <p>Brainstorming</p>
+                    <img src="chat_logic_1.png" alt="Dialogue 1">
+                    <div class="explanation-space">Had no clues what to do next in my final versions development.</div>
+                </div>
+                <div class="comp-item">
+                    <p>Final Vers features</p>
+                    <img src="chat_logic_2.png" alt="Dialogue 2">
+                    <div class="explanation-space">Discussing/suggesting final vers features</div>
+                </div>
+                <div class="comp-item">
+                    <p>Token spare</p>
+                    <img src="chat_logic_3.png" alt="Dialogue 3">
+                    <div class="explanation-space">Got a compiling error, instead of going to Claude Code spending these precious tokens I went to Gemini.</div>
+                </div>
+                <div class="comp-item">
+                    <p>Bootloops cherry (on the cake)</p>
+                    <img src="chat_logic_4.png" alt="Dialogue 4">
+                    <div class="explanation-space">Explaining one of games many features part that Gemini had missed (about bootloop)</div>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 40px;">Evolution of UI (Before vs After)</h3>
+            <div class="comparison-grid">
+                <div class="comp-item">
+                    <p>Alpha (CLI)</p>
+                    <img src="ui_before.png" alt="CLI UI">
+                </div>
+                <div class="comp-item">
+                    <p>Final (GUI)</p>
+                    <img src="ui_after.png" alt="Final UI" style="border: 1px solid #de9b35;">
+                </div>
+            </div>
+
+            <h3>Tools of the Trade</h3>
+            <div style="margin-top: 10px;">
+                <span class="tool-tag">Gemini (Architecture)</span>
+                <span class="tool-tag">Claude Code (Coding)</span>
+                <span class="tool-tag">Raylib (Graphics)</span>
+                <span class="tool-tag">Git (Version Control)</span>
+                <span class="tool-tag">MSVC / MinGW</span>
+                <span class="tool-tag">Photoshop 2021</span>
+            </div>
+        </section>
+
+        <section class="content">
+            <h2>4) Final Reflection</h2>
+            <div class="desc-box" style="border-left-color: #76c7b7;">
+                <p><strong>What improved the most?</strong> My understanding of AI, its architecture and its capabilities. I went from common ChatGPT user level to vibecoder dev and produced something</p>
+                <p><strong>Most useful feedback?</strong> The suggestion to include a manual. It shifted my focus from pure coding and AI engineering to educational game design</p>
+                <p><strong>Future Improvements?</strong> I would like to implement a global leaderboard via a cloud database and add more complex network protocols like HTTPS/web sockets/etc.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer style="position: static; margin-top: 50px; text-align: center; padding: 20px; color: #888;">
+        <p>© 2026 | Raimbek Gabitov | S.A.N.J.A.R. Cybersec Project</p>
+    </footer>
+</body>
+</html>
